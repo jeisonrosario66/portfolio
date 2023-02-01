@@ -1,0 +1,173 @@
+/* Estilos globales */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+p {
+    margin: 0;
+}
+body {
+    background: rgb(230, 229, 229);
+}
+.row>* {
+    padding-right: 0; 
+    padding-left: 0; 
+}
+
+/* contenedor princiapl */
+.container {
+    display: flex;
+    padding: 0;
+    margin-top: 70px;
+}
+.container img {
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin: 0 0 10px 0;
+}
+
+.cuerpo{
+    min-width: 205px;
+
+}
+ 
+.menu_lateral {
+    background: #4A63E7;
+    padding: 30px;
+    border-radius: 18px;
+    color: #fff;
+    position: fixed;
+    /* position: sticky;
+    top: 204px; */
+}
+.menu_lateral h2 {
+    font-weight: 700;
+    margin: 0 0 0 0;
+    font-size: 19px;
+}
+.menu_lateral h2 span {
+    color: red;
+    font-weight: 900;
+}
+.menu_lateral .sub_title {
+    font-size: 9px;
+}
+.menu_opc {
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+.menu_opc li{
+    list-style: none;
+    font-size: 15px;
+    font: menu;
+}
+.menu_opc li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.pie {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 0 ;
+
+}
+
+.pie div {
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+
+.pie p{
+    margin: 7px 0 0 0;
+    font-size: 10px;
+    color: rgb(219, 218, 218);
+}
+.pie a i{
+    color: #fff;
+}
+
+
+.fa-solid {
+    margin: 18px;
+}
+
+
+
+
+/* Contenido principal */
+.row{
+    width: 100vw;
+}
+.info_container article {
+    margin-bottom: 100px;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 140px 0;
+}
+.presentacion {
+    /* height: 562px; */
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+@media (min-width: 1400px){
+    .container {
+        min-width: 1200px;
+    }
+    .menu_lateral{
+        max-width: 250px;
+        min-width: 250px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .container{
+    }
+    .menu_lateral{
+        max-width: 240px;
+        min-width: 240px;
+    }
+}
+
+@media (min-width: 992px){
+    .menu_lateral {
+        max-width: 230px;
+        min-width: 230px;
+    }
+    .container{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 992px){
+    .menu_lateral{
+        
+        transform: translate(-300px, 0%);
+    }
+}
+
+
+@media (min-width: 768px){
+    .menu_lateral {
+        max-width: 220px;
+        min-width: 220px;
+    }
+ 
+}
+
+
+
+/* 
+@media (max-width: 576px){
+    .menu_lateral {
+        display: none;
+    }
+} */
