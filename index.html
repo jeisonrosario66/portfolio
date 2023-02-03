@@ -6,23 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a29143056b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilos/estilos.css">
-    <title>Document</title>
+    <title>Jeison Developer</title>
 </head>
 <body>
-    <div class="contenedor">
-        <div class="cabezera_2">
-            <i class="fa-solid fa-bars"></i>
-            <img src="source/img/perfil.jpg" alt="perfil jeison rosarsio" class="foto_perfil">
-            <h2>Jeison Rosario<i class="fa-solid fa-circle"></i></h2>
-        </div>
-        <div class="menu_lateral">
+    <div class="contenedor ">
+        
+        <div id="menu_lateral" class="menu_lateral mn_ltl_none">
             <header class="cabezera">
                 <img src="source/img/perfil.jpg" alt="perfil jeison rosarsio" class="foto_perfil">
                 <h2>Jeison Rosario<i class="fa-solid fa-circle"></i></h2>
                 <p class="sub_title">BACKEND DEVELOPER JR</p>
                 <ul class="menu_opc">
                     <li><a href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                    <li><a href="#"><i class="iconos_laterales fa-solid fa-user"></i>Acerca de mi...</a></li>
+                    <li><a href="#contacto"><i class="iconos_laterales fa-solid fa-user"></i>Acerca de mi...</a></li>
                     <li><a href="#"><i class="iconos_laterales fa-solid fa-code"></i>Skills</a></li>
                     <li><a href="#"><i class="iconos_laterales fa-solid fa-folder"></i>Portafolio</a></li>
                     <li><a href="#"><i class="iconos_laterales fa-solid fa-envelope"></i>Contacto</a></li>
@@ -38,98 +34,150 @@
             </header>
         </div>
 
-        <div class="info_principal">
-            <section class="">
-                <div id="inicio" class="inicio article">
-                    <div class="">
-                        <h1>Soy Jeison Rosario<i class="fa-solid fa-circle"></i></h1>
-                        <p>Soy estudiante de programacion, En busca de mi primera oportunidad Laboral</p>
-                        <div class="botones">
-                            <button class="btn_basic btn_portfolio"><i class="fa-solid fa-folder"></i><a href="#">Ver Portafofio</a></button>
-                            <button class="btn_basic btn_contacto"><i class="fa-solid fa-envelope"></i><a href="#">Contactame</a></button>
-                        </div>
+        <div id="info_principal" class="info_principal if_prcp_cntr">
+            <div class="cabezera_2">
+                <i id="menu_burger" class="fa-solid fa-bars"></i>
+                <img src="source/img/perfil.jpg" alt="perfil jeison rosarsio" class="foto_perfil">
+                <h2>Jeison Rosario<i class="fa-solid fa-circle"></i></h2>
+            </div>
+            <section  id="inicio"  class="card">
+                <div class="card_inicio">
+                    <h1>Soy Jeison Rosario<i class="fa-solid fa-circle"></i></h1>
+                    <p>Soy estudiante de programacion, En busca de mi primera oportunidad Laboral</p>
+                    <div class="botones">
+                        <button id="btn" class="btn_basic btn_portfolio"><i class="fa-solid fa-folder"></i><a >Ver Portafofio</a></button>
+                        <button class="btn_basic btn_contacto"><i class="fa-solid fa-envelope"></i><a href="#">Contactame</a></button>
                     </div>
                 </div>
-                <div class="article" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, harum ducimus. Dignissimos ducimus, numquam aperiam eum perferendis debitis obcaecati provident quis et odio officia quas pariatur deserunt reiciendis. Pariatur, quam.</div>
-                <div class="article" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam itaque quasi ad quidem earum iure non corporis nobis explicabo, illo necessitatibus repellat placeat accusamus ducimus ea quaerat cupiditate provident? Totam!</div>
             </section>
-
-            <section class="">
-                <div id="inicio" class="inicio article">
-                    <div class="">
-                        <h1>Soy Jeison Rosario<i class="fa-solid fa-circle"></i></h1>
-                        <p>Soy estudiante de programacion, En busca de mi primera oportunidad Laboral</p>
-                        <div class="botones">
-                            <button class="btn_basic btn_portfolio"><i class="fa-solid fa-folder"></i><a href="#">Ver Portafofio</a></button>
-                            <button class="btn_basic btn_contacto"><i class="fa-solid fa-envelope"></i><a href="#">Contactame</a></button>
+            
+            <section id="contacto" class="card">
+                <div class="card_contacto card_basic">
+                    <h2>Acerca de mi</h2>
+                    <div class="separador"></div>   
+                    <div class="info_c">
+                        <img src="source/img/perfil.jpg" alt="perfil jeison rosarsio" class="foto_perfil">
+                        <div class="info_c2">
+                            <h3>Hola,</h3>
+                            <p class="about_me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reicienint tempore dignissimos deleniti provident odio minus natus.</p>
+                            <div class="info_c3">
+                                <div class="div1">
+                                    <p><span>Nombre:</span> Jeison Rosario</p>
+                                    <p><span>Nacimiento:</span>5 Marzo, 1999</p>
+                                </div>
+                                <div class="div2">
+                                    <p><span>Residencia:</span> Santigo, Chile</p>
+                                    <p><span>Email:</span> developer@jeisonrosariodev.com</p>
+                                </div>
+                            </div>
+                            <button class="btn_cv btn_basic"><a href="#"><i class="fa-solid fa-circle-down"></i>Descargar CV</a></button>
                         </div>
                     </div>
                 </div>
-                <div class="article" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, harum ducimus. Dignissimos ducimus, numquam aperiam eum perferendis debitis obcaecati provident quis et odio officia quas pariatur deserunt reiciendis. Pariatur, quam.</div>
-                <div class="article" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam itaque quasi ad quidem earum iure non corporis nobis explicabo, illo necessitatibus repellat placeat accusamus ducimus ea quaerat cupiditate provident? Totam!</div>
             </section>
-
-            <section class="">
-                <div id="inicio" class="inicio article">
-                    <div class="">
-                        <h1>Soy Jeison Rosario<i class="fa-solid fa-circle"></i></h1>
-                        <p>Soy estudiante de programacion, En busca de mi primera oportunidad Laboral</p>
-                        <div class="botones">
-                            <button class="btn_basic btn_portfolio"><i class="fa-solid fa-folder"></i><a href="#">Ver Portafofio</a></button>
-                            <button class="btn_basic btn_contacto"><i class="fa-solid fa-envelope"></i><a href="#">Contactame</a></button>
+            
+            <section id="skill" class="card">
+                <div class="card_skill card_basic">
+                    <h2>Mis Skills</h2>
+                    <div class="separador"></div>   
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam accusantium autem doloribus temporibus ipsum, repellat dolorum. Quo inventore aspernatur</p>
+                    <div class="list_skill">
+                        <div class="skill_g_1">
+                            <div class="skill_html skills">
+                                <h3>HTML</h3>
+                                <div class="barra_progress">
+                                    <div class="progress" style="width: 70%;"></div>
+                                </div>
+                            </div>  
+                            <div class="skill_css skills">
+                                <h3>Css</h3>
+                                <div class="barra_progress">
+                                    <div class="progress" style="width: 65%;"></div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="skill_g_2">
+                            <div class="skill_js skills">
+                                <h3>JavaScrip</h3>
+                                <div class="barra_progress">
+                                    <div class="progress" style="width: 40%;"></div>
+                                </div>
+                            </div>       
+                            <div class="skill_php skills">
+                                <h3>PHP</h3>
+                                <div class="barra_progress">
+                                    <div class="progress" style="width: 60%;"></div>
+                                </div>
+                            </div> 
+                        </div>     
+                        <div class="skill_g_3">
+                            <div class="skill_sql skills">
+                                <h3>SQL</h3>
+                                <div class="barra_progress">
+                                    <div class="progress" style="width: 65%;"></div>
+                                </div>
+                            </div>    
+                            <div class="skill_python skills">
+                                <h3>Python</h3>
+                                <div class="barra_progress">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>     
+                        </div>                      
                     </div>
                 </div>
-                <div class="article" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, harum ducimus. Dignissimos ducimus, numquam aperiam eum perferendis debitis obcaecati provident quis et odio officia quas pariatur deserunt reiciendis. Pariatur, quam.</div>
-                <div class="article" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam itaque quasi ad quidem earum iure non corporis nobis explicabo, illo necessitatibus repellat placeat accusamus ducimus ea quaerat cupiditate provident? Totam!</div>
             </section>
-
-            <section class="">
-                <div id="inicio" class="inicio article">
-                    <div class="">
-                        <h1>Soy Jeison Rosario<i class="fa-solid fa-circle"></i></h1>
-                        <p>Soy estudiante de programacion, En busca de mi primera oportunidad Laboral</p>
-                        <div class="botones">
-                            <button class="btn_basic btn_portfolio"><i class="fa-solid fa-folder"></i><a href="#">Ver Portafofio</a></button>
-                            <button class="btn_basic btn_contacto"><i class="fa-solid fa-envelope"></i><a href="#">Contactame</a></button>
-                        </div>
+          
+            <section class="card">
+                <div class="card_lenguajes card_basic">
+                    <div class="div1">
+                        <i class="fa-brands fa-python"></i>
+                        <i class="fa-brands fa-php"></i>
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="div2">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-square-js"></i>
                     </div>
                 </div>
-                <div class="article" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, harum ducimus. Dignissimos ducimus, numquam aperiam eum perferendis debitis obcaecati provident quis et odio officia quas pariatur deserunt reiciendis. Pariatur, quam.</div>
-                <div class="article" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam itaque quasi ad quidem earum iure non corporis nobis explicabo, illo necessitatibus repellat placeat accusamus ducimus ea quaerat cupiditate provident? Totam!</div>
             </section>
-
-            <section class="">
-                <div id="inicio" class="inicio article">
-                    <div class="">
-                        <h1>Soy Jeison Rosario<i class="fa-solid fa-circle"></i></h1>
-                        <p>Soy estudiante de programacion, En busca de mi primera oportunidad Laboral</p>
-                        <div class="botones">
-                            <button class="btn_basic btn_portfolio"><i class="fa-solid fa-folder"></i><a href="#">Ver Portafofio</a></button>
-                            <button class="btn_basic btn_contacto"><i class="fa-solid fa-envelope"></i><a href="#">Contactame</a></button>
+            
+            <section id="portafolio" class="card">
+                <div class="card_portafolio card_basic">
+                    <h2>Portafofio</h2>
+                    <div class="separador"></div>
+                    <div class="categorias">
+                        <p class="all">Todos</p>
+                    </div>
+                    <div class="proyectos">
+                        <div class="card_project">
+                            <a href="#portafolio" class="enlace_contenedor">
+                                <div class="portafolio_item">
+                                    <div class="detalles">
+                                        <h4 class="title">Portafolio</h4>
+                                        <span class="etiqueta">Html, css</span>
+                                    </div>
+                                    <div class="portada">
+                                        <img src="source/img/img.jpg" alt="imgen de proyecto" class="portada_proyecto">
+                                        <div class="mascara"></div>
+                                    </div>
+                                </div>                                
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="article" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, harum ducimus. Dignissimos ducimus, numquam aperiam eum perferendis debitis obcaecati provident quis et odio officia quas pariatur deserunt reiciendis. Pariatur, quam.</div>
-                <div class="article" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam itaque quasi ad quidem earum iure non corporis nobis explicabo, illo necessitatibus repellat placeat accusamus ducimus ea quaerat cupiditate provident? Totam!</div>
             </section>
-
-            <section class="">
-                <div id="inicio" class="inicio article">
-                    <div class="">
-                        <h1>Soy Jeison Rosario<i class="fa-solid fa-circle"></i></h1>
-                        <p>Soy estudiante de programacion, En busca de mi primera oportunidad Laboral</p>
-                        <div class="botones">
-                            <button class="btn_basic btn_portfolio"><i class="fa-solid fa-folder"></i><a href="#">Ver Portafofio</a></button>
-                            <button class="btn_basic btn_contacto"><i class="fa-solid fa-envelope"></i><a href="#">Contactame</a></button>
-                        </div>
-                    </div>
+            <section class="card">
+                <div class="card_contenedor card_basic">
+                    <h2>Contactame</h2>
+                    <div class="separador"></div>
+                    
                 </div>
-                <div class="article" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, harum ducimus. Dignissimos ducimus, numquam aperiam eum perferendis debitis obcaecati provident quis et odio officia quas pariatur deserunt reiciendis. Pariatur, quam.</div>
-                <div class="article" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam itaque quasi ad quidem earum iure non corporis nobis explicabo, illo necessitatibus repellat placeat accusamus ducimus ea quaerat cupiditate provident? Totam!</div>
             </section>
         </div>
-        
     </div>
+    <script src="js.js"></script>
+
 </body>
 </html>
