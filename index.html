@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="contenedor ">
-        
+
         <div id="menu_lateral" class="menu_lateral mn_ltl_none">
             <header class="cabezera">
                 <img src="source/img/perfil.jpg" alt="perfil jeison rosarsio" class="foto_perfil">
@@ -21,7 +21,7 @@
                     <li><a id="sub_about" href="#about"><i class="iconos_laterales fa-solid fa-user"></i>Acerca de mi...</a></li>
                     <li><a id="sub_skills" href="#skills"><i class="iconos_laterales fa-solid fa-code"></i>Skills</a></li>
                     <li><a id="sub_portafolio" href="#portafolio"><i class="iconos_laterales fa-solid fa-folder"></i>Portafolio</a></li>
-                    <li><a id="sub_contacto" href="#c   ontacto"><i class="iconos_laterales fa-solid fa-envelope"></i>Contacto</a></li>
+                    <li><a id="sub_contacto" href="#contacto"><i class="iconos_laterales fa-solid fa-envelope"></i>Contactó</a></li>
                 </ul>
                 <footer class="footer">
                     <div class="redes">
@@ -43,10 +43,13 @@
             <section  id="inicio"  class="card">
                 <div class="card_inicio">
                     <h1>Soy Jeison Rosario<i class="fa-solid fa-circle"></i></h1>
-                    <p>Soy estudiante de programacion, En busca de mi primera oportunidad Laboral</p>
+                    <p>En busca de nuevas experiencias en el campo de la programación y la tecnología de la información</p>
                     <div class="botones">
                         <button id="btn" class="btn_basic btn_portfolio"><i class="fa-solid fa-folder"></i><a >Ver Portafofio</a></button>
-                        <button class="btn_basic btn_contacto"><i class="fa-solid fa-envelope"></i><a href="#">Contactame</a></button>
+                        <button id="btn_contacto" class="btn_basic btn_contacto">
+                            <i id="btn_contacto_tag" class="fa-solid fa-envelope"></i>
+                            <a id="btn_contacto_tag2" href="#contacto">Contáctame</a>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -58,8 +61,10 @@
                     <div class="info_c">
                         <img src="source/img/perfil.jpg" alt="perfil jeison rosarsio" class="foto_perfil">
                         <div class="info_c2">
-                            <h3>Hola,</h3>
-                            <p class="about_me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reicienint tempore dignissimos deleniti provident odio minus natus.</p>
+                            <h3>Hola</h3>
+                            <p class="about_me">Pensamiento lógico y analítico, para aportar al equipo de trabajo. Habilidades y manejo de nivel medio en el lenguaje python
+                                habilidades en: Python, Php, Sql, Html, CSS, Javascript Sistemas Estudios independientes (+2 año) con alto ritmo de aprendizaje.
+                                </p>
                             <div class="info_c3">
                                 <div class="div1">
                                     <p><span>Nombre:</span> Jeison Rosario</p>
@@ -70,7 +75,7 @@
                                     <p><span>Email:</span> developer@jeisonrosariodev.com</p>
                                 </div>
                             </div>
-                            <button class="btn_cv btn_basic"><a href="#"><i class="fa-solid fa-circle-down"></i>Descargar CV</a></button>
+                            <button id="btn_cv" class="btn_cv btn_basic"><a ><i class="fa-solid fa-circle-down"></i>Descargar CV</a></button>
                         </div>
                     </div>
                 </div>
@@ -80,49 +85,51 @@
                 <div class="card_skill card_basic">
                     <h2>Mis Skills</h2>
                     <div class="separador"></div>   
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam accusantium autem doloribus temporibus ipsum, repellat dolorum. Quo inventore aspernatur</p>
+                    <!-- <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam accusantium autem doloribus temporibus ipsum, repellat dolorum. Quo inventore aspernatur</p> -->
+                    <br>
+                    <br>
                     <div class="list_skill">
                         <div class="skill_g_1">
-                            <div class="skill_html skills">
-                                <h3>HTML</h3>
-                                <div class="barra_progress">
-                                    <div class="progress" style="width: 70%;"></div>
-                                </div>
-                            </div>  
-                            <div class="skill_css skills">
-                                <h3>Css</h3>
-                                <div class="barra_progress">
-                                    <div class="progress" style="width: 65%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill_g_2">
-                            <div class="skill_js skills">
-                                <h3>JavaScrip</h3>
-                                <div class="barra_progress">
-                                    <div class="progress" style="width: 40%;"></div>
-                                </div>
-                            </div>       
-                            <div class="skill_php skills">
-                                <h3>PHP</h3>
-                                <div class="barra_progress">
-                                    <div class="progress" style="width: 60%;"></div>
-                                </div>
-                            </div> 
-                        </div>     
-                        <div class="skill_g_3">
-                            <div class="skill_sql skills">
-                                <h3>SQL</h3>
-                                <div class="barra_progress">
-                                    <div class="progress" style="width: 65%;"></div>
-                                </div>
-                            </div>    
                             <div class="skill_python skills">
                                 <h3>Python</h3>
                                 <div class="barra_progress">
                                     <div class="progress" style="width: 80%;"></div>
                                 </div>
                             </div>     
+                            <div class="skill_php skills">
+                                <h3>PHP</h3>
+                                <div class="barra_progress">
+                                    <div class="progress" style="width: 60%;"></div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="skill_g_2">
+                            <div class="skill_sql skills">
+                                <h3>SQL</h3>
+                                <div class="barra_progress">
+                                    <div class="progress" style="width: 65%;"></div>
+                                </div>
+                            </div>    
+                            <div class="skill_html skills">
+                                <h3>HTML</h3>
+                                <div class="barra_progress">
+                                    <div class="progress" style="width: 70%;"></div>
+                                </div>
+                            </div>  
+                        </div>     
+                        <div class="skill_g_3">
+                            <div class="skill_css skills">
+                                <h3>Css</h3>
+                                <div class="barra_progress">
+                                    <div class="progress" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill_js skills">
+                                <h3>JavaScrip</h3>
+                                <div class="barra_progress">
+                                    <div class="progress" style="width: 40%;"></div>
+                                </div>
+                            </div>       
                         </div>                      
                     </div>
                 </div>
