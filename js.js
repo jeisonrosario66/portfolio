@@ -78,3 +78,34 @@ const cvBtn = document.getElementById("btn_cv");
 cvBtn.addEventListener("click", function() {
     window.open(cvUrl, 'Download');
 })
+
+
+//Hover de las targetas de proyectos
+// hover
+const cardProject = document.getElementsByClassName("card_project");
+const infoProject = document.getElementsByClassName("info_project");
+const portadaProyecto = document.getElementsByClassName("portada_proyecto");
+
+for(let i = 0; i < cardProject.length; i++) {
+    cardProject[i].addEventListener("mouseover", function(){
+            infoProject[i].classList.add("info_project_active");
+            portadaProyecto[i].classList.add("portada_proyecto_active");
+    });
+    //Hover out
+    cardProject[i].addEventListener("mouseout", function(){
+        infoProject[i].classList.remove("info_project_active");
+        portadaProyecto[i].classList.remove("portada_proyecto_active");
+    });
+  };
+/*  
+cardProject.addEventListener("mouseover", function(){
+    //infoProject.classList.add("info_project_active");
+    //portadaProyecto.classList.add("portada_proyecto_active");
+});
+//Hover out
+cardProject.addEventListener("mouseout", function(){
+    //infoProject.classList.remove("info_project_active");
+    //portadaProyecto.classList.remove("portada_proyecto_active");
+
+});
+*/
