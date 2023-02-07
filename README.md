@@ -1,5 +1,5 @@
-# portfolio
-portafio - Carta de presentacion
+# Portafolio
+portafolio - Carta de presentacion
 
 
 Sitio Web construido con html, css, php y javascrip puro
